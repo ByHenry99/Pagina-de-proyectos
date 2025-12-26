@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Proyectos de Henry</title>
+
+    <style>
+        h1{
+            text-align: center;
+            color: #acd550
+        }
+
+        body{
+            background-color: #171A21;
+            font-family: sans-serif;
+        }
+
+        .projects-scroll{
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 20px;
+            scroll-behavior: smooth;
+        }
+
+        /* opcional: barra más linda */
+        .projects-scroll::-webkit-scrollbar{
+            height: 8px;
+        }
+
+        .projects-scroll::-webkit-scrollbar-thumb{
+            background: #acd550;
+            border-radius: 4px;
+        }
+
+        /* tarjeta */
+        .project-card{
+            min-width: 220px;
+            background: #1f2430;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .project-card img{
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .project-card a{
+            display: inline-block;
+            margin-top: 10px;
+            color: #acd550;
+            text-decoration: none;
+        }
+
+        .card-title{
+            color: white;
+        }
+
+        .card-image{
+            height: 300px;
+            width: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Proyectos de Henry</h1>
+
+    <section class="projects-scroll">
+        <article class="project-card">
+            <img class="card-image" src="images/formulariovehiculos.png" alt="Formulario de vehiculos">
+            <h3 class="card-title">Formulario de vehiculos</h3>
+            <a href="https://github.com/ByHenry99/Formulario-de-vehiculos">Ver proyecto</a>
+        </article>
+
+        <article class="project-card">
+            <img class="card-image" src="images/POS.png" alt="Cajero automatico">
+            <h3 class="card-title">Cajero automatico
+                <div>
+                    restaurante
+                </div>
+            </h3>
+            <a href="https://github.com/ByHenry99/Cajero-automatico-">Ver proyecto</a>
+        </article>
+
+        <article class="project-card">
+            <img class="card-image" src="images/Parqueadero.png" alt="Parqueadero">
+            <h3 class="card-title">Parqueadero</h3>
+            <a href="https://github.com/ByHenry99/Parqueadero">Ver proyecto</a>
+        </article>
+    </section>
+</body>
+</html>
