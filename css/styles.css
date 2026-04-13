@@ -1,0 +1,124 @@
+
+        h1{
+            text-align: center;
+            color: #acd550
+        }
+
+        body{
+            background-color: #171A21;
+            font-family: sans-serif;
+        }
+
+        .projects-scroll{
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 20px;
+            scroll-behavior: smooth;
+        }
+
+        /* opcional: barra más linda */
+        .projects-scroll::-webkit-scrollbar{
+            height: 8px;
+        }
+
+        .projects-scroll::-webkit-scrollbar-thumb{
+            background: #acd550;
+            border-radius: 4px;
+        }
+
+        /* tarjeta */
+        .project-card{
+            min-width: 220px;
+            background: #1f2430;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            flex-shrink: 0; /*Permite que el contenido se adapte al dispositivo*/
+        }
+
+        .project-card img{
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .project-card a{
+            display: inline-block;
+            margin-top: 10px;
+            color: #acd550;
+            text-decoration: none;
+        }
+
+        .card-title{
+            color: white;
+        }
+
+        .card-image{
+            height: 300px;
+            width: 30px;
+        }
+
+        .card-summary{
+            color: aliceblue;
+            margin: 8px auto;
+        }
+
+        .card-link:active{
+            color: aliceblue;
+        }
+
+        .card-link:hover{
+            color: aliceblue;
+            outline: 4px;
+        }
+        
+        .presentation{
+            display: flex; /*poner todos los items en la misma fila */
+            align-items: center; /* centrar los items verticalmente */
+            gap: 20px; /* Espacio entre imagenes y texto */
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .presentation h3{
+            color: #acd550;
+            margin: auto;
+            text-align: center;
+        }
+
+        .presentation p{
+            color: aliceblue;
+            text-align: center;
+        }
+
+        .presentation img{
+            width: 200px;
+            border-radius: 10px;
+            border: #acd550;
+        }
+
+        footer{
+            margin-top: 20px;
+            color: aliceblue;
+            text-align: center;
+        }
+
+        footer a{
+            color: #acd550;
+        }
+
+        details p{
+            color: aliceblue;
+            margin-top: 8px;
+            white-space: normal;
+            overflow-wrap: break-word;
+            max-width: 260px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        summary:hover{
+            color: #acd550;
+        }
